@@ -36,17 +36,34 @@ Chiqish:
   active: true
 }
 */
+function extractAll(obj, prefix ="", seperator = "."){
+  const res = {}
+  for(const [key,value] of Object.entries(obj)){
+    const fullkey = prefix ? `${prefix}${seperator}${key}` : key
+    if(typeof value === "object" && value !== null && !Array.isArray(value)){
+      Object.assign(res, extractAll(value,fullkey, seperator))
+    }
+    else{
+      res[fullkey] = value
+    }
+  }
+  return res
+}
+
 function findCommonPairs(jsonData1, jsonData2){
-   let result = new Object()
-   for (let key of jsonData1){
-    if(typeof key === Object){
-      for(let item of key){
-        if(typeof item === Object){
+      let res = {}
+      let data1 = extractAll(jsonData1)
+      let data2 = extractAll(jsonData2)
+      console.log(data1)
+      console.log(data2)
+      for(let [key,value] of Object.entries(data1)){
+        if(data2.hasOwnProperty(key) && data2[key] === value){
+          res[key] = value
         }
       }
-    }
-   }
+      return res
   }
+
  const jsonData1 = {
     user: {
     name: "Ali",
