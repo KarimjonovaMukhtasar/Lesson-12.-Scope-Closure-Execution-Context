@@ -4,6 +4,7 @@ Siz foydalanuvchi kiritgan bank ish kunidan kelib chiqib yilning qaysi oy va
 qaysi sanasida aytilgan kun kelishini hisoblovchi funksiya yozing. 
 Bank ish kunida shanba va yakshanba dam olish kuni sifatida hisoblanmaydi.
 */
+//
 function exactDate(day){
     day = Number(day)
     let result = new Date()

@@ -8,6 +8,7 @@ Kirish ma'lumotlari: Boshlanish va tugash vaqtlari formati: HH:MM Misol: console
 // "Ish vaqti: 8 soat 30 daqiqa" console.log(calculateWorkingHours("10:00", "09:00")); 
 // // "Xato: tugash vaqti boshlanish vaqtidan oldin bo'lishi mumkin emas"
 */
+//
 function calculateWorkingHours(startTime,endTime){
     let StartMinutes = startTime.split(":")[1]
     let StartHours = startTime.split(":")[0]

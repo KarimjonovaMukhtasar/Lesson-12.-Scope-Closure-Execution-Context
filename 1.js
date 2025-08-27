@@ -7,6 +7,7 @@ Voris class uchun kafolat muddatini hisobga oluvchi totalPrice metodini qayta yo
 Bunda agar kafolat muddatiga 5 kun qolgan bo'lsa 10%, 4 kun qolgan bo'lsa 20%, 
 3 kun qolgan bo'lsa 30%, 2 kun qolgan bo'lsa 40% va 1 kun qolgan bo'lsa 50% narxda hisoblashni amalga oshiring.
 */
+//
 class Product {
     static productCount = 0
     constructor (id,name,price){

@@ -54,8 +54,6 @@ function findCommonPairs(jsonData1, jsonData2){
       let res = {}
       let data1 = extractAll(jsonData1)
       let data2 = extractAll(jsonData2)
-      console.log(data1)
-      console.log(data2)
       for(let [key,value] of Object.entries(data1)){
         if(data2.hasOwnProperty(key) && data2[key] === value){
           res[key] = value
@@ -87,5 +85,4 @@ const jsonData2 = {
     },
   active: true
 };
-
 console.log(findCommonPairs(jsonData1, jsonData2));

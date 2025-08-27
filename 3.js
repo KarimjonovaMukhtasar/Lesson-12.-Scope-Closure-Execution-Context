@@ -4,6 +4,7 @@ name va departments (array) xususiyatlariga ega bo'lgan Universitet nomli class 
  Universitet classidan object yarating, 5ta yangi bo'lim qo'shing va 2 ta bo'limni olib tashlang. 
  Qolgan bo'limlar ro'yxatini chiqaring.
 */
+//
 class University {
     constructor(name,...departments){
         this.name = name

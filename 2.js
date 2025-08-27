@@ -7,6 +7,7 @@ Shuningdek ushbu class ikki nuqta orasidagi masofani hisoblovchi distance nomli 
       console.log(Point.distance(p1, p2));
 
 */
+//
 class Point {
     constructor(x,y){
         this.x = x
